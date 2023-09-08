@@ -1,0 +1,59 @@
+<html>
+<head>
+<script>
+	
+	function registration(){
+	
+	var fname=document.getElementById("fname").value;
+	var lname=document.getElementById("lname").value;
+	var userid=document.getElementById("userid").value;
+	var pwd=document.getElementById("pwd").value;
+	var reenteredpwd=document.getElementById("reenterpwd").value;
+	var country=document.getElementById("country").value; 
+	
+	if(fname==""){
+	
+		alert("first name required");
+	
+	}else if(userid.length<2){
+		
+		alert("userid should be minimum 4 characters");
+	}else{
+		alert("registration successful");
+	
+	}
+}	
+	
+</script>
+</head>
+<body>
+<h1>Registration</h1>
+
+<label for="fname">Firstname</label><br>
+<input type="text" id="fname"></input><br><br/>
+
+<label for="lname">Lastname</label><br>
+<input type="text" id="lname"></input><br><br/>
+
+<label for="userid">UserId</label><br>
+<input type="text" id="userid"></input><br><br/>
+
+<label for="pwd">Password</label><br>
+<input type="password" id="pwd"></input><br><br/>
+
+<label for="reenterpwd">Re-enter password</label><br>
+<input type="text" id="reenterpwd"></input><br><br/>
+
+<label for="country">Country</label><br/>
+<select id="country">
+<option value=""></option>
+<option value="India">India</option>
+<option value="Usa">UnitedStatesofAmerica</option>
+<option value="China">China</option>
+</select><br></br>
+
+<input type="submit" value="submit" onclick="registration()"></input>
+
+
+</body>
+</html>
